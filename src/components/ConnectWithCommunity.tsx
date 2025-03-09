@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Facebook, Instagram, MessageCircle, Github } from "lucide-react";
 
 const ConnectWithCommunity = () => {
   return (
@@ -44,16 +44,19 @@ const ConnectWithCommunity = () => {
             <Button className="bg-brand-500 hover:bg-brand-600 mt-auto">Follow Us</Button>
           </a>
 
-          <div 
+          <a 
+            href="https://github.com/techforge09" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="flex flex-col items-center glass border rounded-xl p-8 hover:shadow-md transition-all hover:-translate-y-1"
           >
-            <Facebook className="h-12 w-12 text-brand-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">More Coming Soon</h3>
+            <Github className="h-12 w-12 text-brand-500 mb-4" />
+            <h3 className="text-xl font-semibold mb-2">GitHub</h3>
             <p className="text-center text-muted-foreground mb-4">
-              We're expanding our community presence. Stay tuned for more platforms.
+              Check out our open source projects and contribute to our codebase.
             </p>
-            <Button variant="outline" className="mt-auto">Stay Updated</Button>
-          </div>
+            <Button className="bg-brand-500 hover:bg-brand-600 mt-auto">Follow Us</Button>
+          </a>
         </div>
       </div>
     </section>
