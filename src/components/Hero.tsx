@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -21,10 +22,16 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-up animation-delay-200">
-              <Button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-6 h-auto">
-                Get Started
-              </Button>
-              <Button variant="outline" className="px-8 py-6 h-auto">
+              <Link to="/signup">
+                <Button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-6 h-auto">
+                  Get Started
+                </Button>
+              </Link>
+              <Button 
+                variant="outline" 
+                className="px-8 py-6 h-auto"
+                onClick={() => window.location.href = "#marketplace"}
+              >
                 Explore Marketplace
               </Button>
             </div>

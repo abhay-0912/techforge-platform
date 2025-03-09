@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -16,25 +17,49 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-end">
-              <Button variant="outline" className="px-6 h-12">
+              <Button 
+                variant="outline" 
+                className="px-6 h-12"
+                onClick={() => window.location.href = "#features"}
+              >
                 Learn More
               </Button>
-              <Button className="bg-brand-500 hover:bg-brand-600 px-6 h-12">
-                Get Started
-              </Button>
+              <Link to="/signup">
+                <Button className="bg-brand-500 hover:bg-brand-600 px-6 h-12">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-6">
+            <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="h-8 w-8 rounded-md bg-brand-500 flex items-center justify-center text-white font-bold">TF</div>
               <span className="text-xl font-semibold tracking-tight">TechForge</span>
-            </div>
+            </Link>
             <p className="text-muted-foreground mb-4">
               Streamlined development platform for software solutions, freelance marketplace, and community hub.
             </p>
+            <div className="flex gap-4">
+              <a 
+                href="https://discord.gg/7bWtj887" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Discord
+              </a>
+              <a 
+                href="https://www.instagram.com/logic_loom_" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Instagram
+              </a>
+            </div>
           </div>
 
           <div>
