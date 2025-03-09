@@ -17,7 +17,8 @@ const featuresList = [
       'Verified and secure downloads',
       'Developer reviews and ratings',
       'Regular updates and version control'
-    ]
+    ],
+    techStack: 'React + TypeScript frontend, RESTful API backend'
   },
   {
     id: 'marketplace',
@@ -33,11 +34,12 @@ const featuresList = [
     ),
     color: 'bg-cyan-500',
     items: [
-      'Talent matching algorithms',
+      'Smart talent matching algorithms',
       'Secure payment processing',
       'Project milestone tracking',
       'Verified developer profiles'
-    ]
+    ],
+    techStack: 'Tailwind CSS, MySQL database, PHP backend'
   },
   {
     id: 'community',
@@ -55,12 +57,13 @@ const featuresList = [
       'Knowledge sharing resources',
       'Live coding events and challenges',
       'Mentorship opportunities'
-    ]
+    ],
+    techStack: 'JavaScript, WebSockets for real-time updates'
   },
   {
     id: 'admin',
-    title: 'Full Admin Control',
-    description: 'Comprehensive admin panel for complete content and user management.',
+    title: 'Complete Admin Dashboard',
+    description: 'Comprehensive admin panel for content management, user oversight, and analytics.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
         <path d="M12 4.5a2.5 2.5 0 0 0-4.96-.46 2.5 2.5 0 0 0-1.98 3 2.5 2.5 0 0 0 1.32 4.24 2.5 2.5 0 0 0 1.98 3A2.5 2.5 0 0 0 12 19.5a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 1.98-2.94 2.5 2.5 0 0 0-1.32-4.28 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 12 4.5Z" />
@@ -69,11 +72,12 @@ const featuresList = [
     ),
     color: 'bg-amber-500',
     items: [
-      'Content moderation tools',
-      'User management and permissions',
-      'Activity monitoring and analytics',
-      'Email notifications and reporting'
-    ]
+      'Advanced content moderation tools',
+      'Role-based user management',
+      'Real-time activity monitoring',
+      'Automated weekly email reports'
+    ],
+    techStack: 'Flask/Python backend, JWT authentication'
   }
 ];
 
@@ -83,15 +87,21 @@ const Features = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium mb-4 animate-fade-down">
-            Core Features
+            Key Platform Components
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-up">
-            Everything you need to succeed
+            Everything you need to accelerate development
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-up animation-delay-100">
-            TechForge offers a complete ecosystem for developers to find resources, 
-            connect with opportunities, and grow their skills.
+            TechForge offers an integrated ecosystem for developers to find resources, 
+            connect with opportunities, and grow their technical expertise.
           </p>
+          
+          <div className="mt-6 p-4 glass border rounded-lg inline-block animate-fade-up animation-delay-200">
+            <p className="text-sm font-medium text-muted-foreground">
+              <span className="text-brand-600 font-semibold">Tech Stack Overview:</span> React, TypeScript, PHP/Python, MySQL/SQLite, JWT Authentication
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-up animation-delay-200">
@@ -110,7 +120,13 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground mb-6">{feature.description}</p>
+                  <p className="text-muted-foreground mb-3">{feature.description}</p>
+                  
+                  {feature.techStack && (
+                    <div className="mb-4 inline-block px-3 py-1 bg-secondary/70 rounded-full text-xs font-medium">
+                      {feature.techStack}
+                    </div>
+                  )}
                   
                   <ul className="space-y-3">
                     {feature.items.map((item, idx) => (
