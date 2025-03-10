@@ -45,7 +45,7 @@ const ConnectWithCommunity = () => {
           </a>
 
           <a 
-            href="https://github.com/techforge09" 
+            href="https://github.com/TechForge-Dev" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center glass border rounded-xl p-8 hover:shadow-md transition-all hover:-translate-y-1"
