@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 max-w-2xl">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium animate-fade-down">
-              Simplifying Development
+              Innovate, Build, Dominate
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight animate-fade-up">
@@ -17,14 +17,14 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground animate-fade-up animation-delay-100">
-              TechForge is your all-in-one platform for software solutions, 
-              freelance opportunities, and tech community engagement.
+              TechForge is a dynamic tech hub for developers, cybersecurity enthusiasts, freelancers, and tech innovators.
+              It's more than just a community—it's a movement.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-up animation-delay-200">
               <Link to="/signup">
                 <Button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-6 h-auto">
-                  Get Started
+                  Join the Movement
                 </Button>
               </Link>
               <Button 

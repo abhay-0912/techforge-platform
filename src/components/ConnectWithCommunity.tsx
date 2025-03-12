@@ -10,9 +10,28 @@ const ConnectWithCommunity = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Connect with Our Community</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join our growing community of developers and tech enthusiasts. 
-            Share ideas, get help, and stay updated with the latest from TechForge.
+            TechForge isn't just a community—it's a revolution. Join our growing network of developers, 
+            cybersecurity enthusiasts, and tech innovators.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto mb-12">
+          <div className="glass border rounded-xl p-6 text-center">
+            <h3 className="text-xl font-semibold mb-2">👑 Forge Master</h3>
+            <p className="text-muted-foreground">Admins & Founders who oversee the community</p>
+          </div>
+          <div className="glass border rounded-xl p-6 text-center">
+            <h3 className="text-xl font-semibold mb-2">⚡ Tech Elite</h3>
+            <p className="text-muted-foreground">Trusted contributors and industry experts</p>
+          </div>
+          <div className="glass border rounded-xl p-6 text-center">
+            <h3 className="text-xl font-semibold mb-2">🔥 Code Warrior</h3>
+            <p className="text-muted-foreground">Experienced developers and cybersecurity pros</p>
+          </div>
+          <div className="glass border rounded-xl p-6 text-center">
+            <h3 className="text-xl font-semibold mb-2">🌱 Rookie Dev</h3>
+            <p className="text-muted-foreground">Newcomers learning & growing with the community</p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -57,6 +76,34 @@ const ConnectWithCommunity = () => {
             </p>
             <Button className="bg-brand-500 hover:bg-brand-600 mt-auto">Follow Us</Button>
           </a>
+        </div>
+
+        <div className="mt-16 max-w-3xl mx-auto">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">Why Join TechForge?</h3>
+            <ul className="flex flex-col gap-3 text-left max-w-lg mx-auto">
+              <li className="flex items-start gap-2">
+                <span className="text-brand-500 font-bold">✅</span> 
+                <span>Learn from experts in cybersecurity, AI, blockchain, and software development</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-500 font-bold">✅</span> 
+                <span>Network with freelancers and potential job recruiters</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-500 font-bold">✅</span> 
+                <span>Participate in hackathons and coding challenges</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-500 font-bold">✅</span> 
+                <span>Stay updated on tech trends and industry insights</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-500 font-bold">✅</span> 
+                <span>Have fun! Because tech isn't just work—it's a passion</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
